@@ -78,15 +78,15 @@
                         return el;
                     }
                 </script>
-                <div onclick="actualNextSibling(this).style.display='block'; this.style.display='none'">
+                <div
+                    onclick="actualNextSibling(this).style.display='block'; document.querySelector('#video').src = 'https://www.youtube.com/embed/f02mOEt11OQ?autoplay=1'; this.style.display='none'">
                     <img src="./assets/video-prev.jpg" alt="splash" style="cursor: pointer" />
                 </div>
                 <div style="display: none">
-                    <iframe width="1127" height="634" src="https://www.youtube.com/embed/f02mOEt11OQ" frameborder="0"
+                    <iframe id="video" width="1127" height="634" src="" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-
             </div>
             <div>
                 <div class="row">
